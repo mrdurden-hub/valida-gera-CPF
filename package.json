@@ -1,5 +1,5 @@
 {
-  "name": "gerador-validador-cpf",
+  "name": "gera_valida_cpf_br",
   "version": "1.0.0",
   "description": "Pacote útil para validar e gerar números cpf",
   "main": "index.js",
