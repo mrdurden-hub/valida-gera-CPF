@@ -1,11 +1,11 @@
 {
   "name": "gerador-validador-cpf",
   "version": "1.0.0",
-  "description": "",
+  "description": "Pacote útil para validar e gerar números cpf",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "mrdurden",
   "license": "ISC"
 }
