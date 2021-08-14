@@ -1,12 +1,14 @@
 # Classes úteis para gerar e validar CPF
-
- - instalação:
+ 
+Como usar ?
+ 
+```shell
  npm i gera_valida_cpf_br
+```
 
- - importar:
+ ```js
  const { ValidaCPF, GeraCPF} = require('gera_valida_cpf_br')
-
- ```Como usar?
+```
 
  - ValidaCPF(cpf): Essa classe recebe um cpf como construtor e precisa ter o método valida() chamado para validar o cpf.
 
