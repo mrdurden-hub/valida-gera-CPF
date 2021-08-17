@@ -1,11 +1,16 @@
 {
-  "name": "gera_valida_cpf_br",
+  "name": "valida-gera-cpf",
   "version": "1.0.0",
   "description": "Pacote útil para validar e gerar números cpf",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrdurden-hub/valida-gera-CPF.git"
+  },
+  "keywords":["cpf", "validador", "gerador", "valida", "gera"],
   "author": "mrdurden",
   "license": "ISC"
 }
