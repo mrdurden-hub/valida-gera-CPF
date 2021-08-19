@@ -18,8 +18,6 @@
   ```js
  const valido = new ValidaCPF('00000000000').valida()
 ```
-
-<<<<<<< HEAD
   - GeraCPF(): Essa classe irá gerar um novo cpf através do método geraNovoCpf().
 
   ```js
