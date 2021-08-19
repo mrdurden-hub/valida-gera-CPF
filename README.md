@@ -22,9 +22,4 @@
 
   ```js
  const cpf = new GeraCPF().geraNovoCpf()
-<<<<<<< HEAD
-```
-=======
-```
-
->>>>>>> 130dbb0e6e309d3f5cda9ce4f6ee89a468385372
+ ```
