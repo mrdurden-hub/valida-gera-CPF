@@ -23,3 +23,5 @@
   ```js
  const cpf = new GeraCPF().geraNovoCpf()
 ```
+![imgmd](https://user-images.githubusercontent.com/76436331/129997129-47f860f3-31af-47ed-bee3-53490da6619d.jpg)
+
