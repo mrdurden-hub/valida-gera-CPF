@@ -1,6 +1,6 @@
 export class Validate {
-  cpfClear: string;
-  newCpf: string;
+  private cpfClear: string;
+  private newCpf: string;
 
   constructor(private readonly cpf: string) {
     this.cleanUpString();
@@ -16,31 +16,31 @@ export class Validate {
     return this.newCpf === this.cpfClear;
   }
 
-  cleanUpString(): void {
+  private cleanUpString(): void {
     this.cpfClear = this.cpf.replace(/\D+/g, '');
   }
 
-  isSequence(cpfClear: string): boolean {
+  private isSequence(cpfClear: string): boolean {
     return cpfClear.charAt(0).repeat(11) === this.cpfClear;
   }
 
-  createNewCpf() {
+  private createNewCpf() {
     const cpfWithoutDigits = this.cpfClear.slice(0, -2);
-    const digito1 = Validate.createDigit(cpfWithoutDigits);
-    const digito2 = Validate.createDigit(cpfWithoutDigits + digito1);
-    this.newCpf = cpfWithoutDigits + digito1 + digito2;
+    const digit1 = Validate.createDigit(cpfWithoutDigits);
+    const digit2 = Validate.createDigit(cpfWithoutDigits + digit1);
+    this.newCpf = cpfWithoutDigits + digit1 + digit2;
   }
 
-  static createDigit(cpfSemDigitos: string) {
+  static createDigit(cpfWithoutDigits: string) {
     let total = 0;
-    let reverso = cpfSemDigitos.length + 1;
+    let reverse = cpfWithoutDigits.length + 1;
 
-    for (const stringNumerica of cpfSemDigitos) {
-      total += reverso * Number(stringNumerica);
-      reverso--;
+    for (const stringNumerica of cpfWithoutDigits) {
+      total += reverse * Number(stringNumerica);
+      reverse--;
     }
 
-    const digito = 11 - (total % 11);
-    return digito <= 9 ? String(digito) : '0';
+    const digit = 11 - (total % 11);
+    return digit <= 9 ? String(digit) : '0';
   }
 }
